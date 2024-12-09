@@ -1,4 +1,4 @@
-# Apple silicon 版 ShogiHome + 水匠を Brew で入れる手順
+# Mac に ShogiHome + 水匠を Brew で入れる手順
 
 ## 初回
 
