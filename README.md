@@ -10,15 +10,6 @@ open -a ShogiHome
 
 次に進む↓
 
-## 開発元を疑われる
-
-1. 「"ShogiHome.app" は、開発元を検証できないため開けません」と言われるので「キャンセル」する
-1. `open x-apple.systempreferences:com.apple.preference.security` を実行する (システム設定のプレイバシーとセキュリティが開く)
-1. 「"ShogiHome.app" は、開発元を確認できないため、使用がブロックされました」の下にある「このまま開く」をクリックする
-1. さらに「開く」をクリックするとやっと ShogiHome が起動する
-
-次に進む↓
-
 ## ShogiHome に水匠を登録
 
 1. 「エンジン管理」→「追加」で `/opt/homebrew/Cellar/yaneuraou/8.30/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1` を指定する。
@@ -60,3 +51,4 @@ ShogiHome → 水匠 → やねうら王
   - だから eval ディレクトリを作れず nn.bin を置けない
   - でも /tmp/foo は作れる
   - SIP のせい？？？
+  - でも ShogiHome 側で nn.bin の置き場所を指定できたのでなんとかなった

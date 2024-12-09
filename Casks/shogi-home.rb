@@ -11,4 +11,8 @@ cask "shogi-home" do
   app "ShogiHome.app"
 
   depends_on formula: "suisho"
+
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-rd", "com.apple.quarantine", "#{staged_path}/ShogiHome.app"], sudo: true
+  end
 end
