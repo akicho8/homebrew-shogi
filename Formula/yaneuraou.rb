@@ -7,6 +7,16 @@ class Yaneuraou < Formula
   homepage "https://github.com/yaneurao/YaneuraOu"
 
   def install
-    prefix.install Dir["YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1"]
+    if Hardware::CPU.intel?
+      if Hardware::CPU.features.include?(:avx2)
+        prefix.install Dir["YaneuraOu_NNUE_halfKPE9-V830Git_APPLEAVX2"]
+      end
+      if Hardware::CPU.features.include?(:sse4_2)
+        prefix.install Dir["YaneuraOu_NNUE_halfKPE9-V830Git_APPLESSE42"]
+      end
+    end
+    if Hardware::CPU.arm?
+      prefix.install Dir["YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1"]
+    end
   end
 end
