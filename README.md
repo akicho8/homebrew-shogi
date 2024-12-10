@@ -4,6 +4,7 @@
 
 ```
 brew tap akicho8/shogi
+brew info --cask shogi-home
 brew install --cask shogi-home
 open -a ShogiHome
 ```
