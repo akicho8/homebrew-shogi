@@ -4,7 +4,6 @@
 
 ```
 brew tap akicho8/shogi
-brew info --cask shogi-home
 brew install --cask shogi-home
 open -a ShogiHome
 ```
@@ -30,6 +29,8 @@ ShogiHome のコマンドラインでエンジンの追加やパラメータの�
 brew update
 brew upgrade shogi-home
 ```
+
+ごちゃごちゃになってしまった場合は完全削除して入れ直すのでもいい。
 
 ## 完全削除するには？
 
