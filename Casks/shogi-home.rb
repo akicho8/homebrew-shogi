@@ -19,7 +19,7 @@ cask "shogi-home" do
   def caveats
     <<~EOS
 ----------------------------------------------------------------------------------------------------
-ShogiHome の初回インストール後に ShogiHome を起動したら次の設定を手動で行なってください。
+ShogiHome を起動したら初回のみ次の設定を手動で行なってください。
 
 1. 「エンジン管理→追加」で次のファイル追加する
    /opt/homebrew/Cellar/yaneuraou/8.30/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1
