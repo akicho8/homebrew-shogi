@@ -15,4 +15,21 @@ cask "shogi-home" do
   postflight do
     system_command "/usr/bin/xattr", args: ["-rd", "com.apple.quarantine", "#{staged_path}/ShogiHome.app"], sudo: true
   end
+
+  def caveats
+    <<~EOS
+----------------------------------------------------------------------------------------------------
+ShogiHome の初回インストール後に ShogiHome を起動したら次の設定を手動で行なってください。
+
+1. 「エンジン管理→追加」で次のファイル追加する
+   /opt/homebrew/Cellar/yaneuraou/8.30/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1
+   ※ファイル選択ダイアログから Command + Shift + G で上のパスを入力する
+
+2. そのエンジンの設定の「評価関数のフォルダ」に次のディレクトリを指定する
+   /opt/homebrew/Cellar/suisho/5
+
+上の説明は brew info shogi-home で再度確認できます。
+----------------------------------------------------------------------------------------------------
+  EOS
+  end
 end
