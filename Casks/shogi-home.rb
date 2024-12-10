@@ -1,5 +1,5 @@
 cask "shogi-home" do
-  desc "ShogiHome (しょうぎほーむ) は Windows または macOS・Linux で動作する将棋アプリです。公開のソースコードを用いて独自のバージョンを作成して配布が可能です。"
+  desc "ShogiHome は Windows または macOS・Linux で動作する将棋アプリです。公開のソースコードを用いて独自のバージョンを作成して配布が可能です。"
   homepage "https://github.com/sunfish-shogi/shogihome"
   name "ShogiHome"
 
