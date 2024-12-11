@@ -10,5 +10,8 @@ class Suisho < Formula
   def install
     prefix.install "nn.bin"
   end
+
+  test do
+    assert_predicate prefix/"nn.bin", :exist?, "評価関数が含まれていません"
   end
 end
