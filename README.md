@@ -12,9 +12,9 @@ open -a ShogiHome
 
 ## ShogiHome に水匠を登録
 
-1. 「エンジン管理」→「追加」で `/opt/homebrew/Cellar/yaneuraou/8.30/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1` を指定する。
+1. 「エンジン管理」→「追加」で `/opt/homebrew/opt/yaneuraou/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1` を指定する。
    ここではダイアログから選択しないといけないのだが `/opt` の下に行くが難しいため `Command + Shift + G` で上のパスを入力するのがてっとりばやい。
-1. そのエンジンの設定の「評価関数のフォルダ」に `/opt/homebrew/Cellar/suisho/5` を指定する。直接指定すれば eval の下に nn.bin を置く作業は不要になる。
+1. そのエンジンの設定の「評価関数のフォルダ」に `/opt/homebrew/opt/suisho` を指定する。直接指定すれば eval の下に nn.bin を置く作業は不要になる。
 
 以上。
 

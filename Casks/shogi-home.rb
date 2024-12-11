@@ -22,14 +22,19 @@ cask "shogi-home" do
 ShogiHome を起動したら初回のみ次の設定を手動で行なってください。
 
 1. 「エンジン管理→追加」で次のファイル追加する
-   /opt/homebrew/Cellar/yaneuraou/8.30/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1
+   /opt/homebrew/opt/yaneuraou/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1
    ※ファイル選択ダイアログから Command + Shift + G で上のパスを入力する
 
 2. そのエンジンの設定の「評価関数のフォルダ」に次のディレクトリを指定する
-   /opt/homebrew/Cellar/suisho/5
+   /opt/homebrew/opt/suisho
 
 上の説明は brew info shogi-home で再度確認できます。
 ----------------------------------------------------------------------------------------------------
   EOS
   end
+
+  # cask の場合 brew test で実行できない
+  # test do
+  #   assert_predicate "/Applications/ShogiHome.app", :exist?, "ShogiHome が正しくインストールされていません"
+  # end
 end
