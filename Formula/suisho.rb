@@ -8,6 +8,7 @@ class Suisho < Formula
   depends_on "yaneuraou"
 
   def install
-    prefix.install Dir["*"]
+    prefix.install "nn.bin"
+  end
   end
 end
