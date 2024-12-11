@@ -47,10 +47,11 @@ brew untap akicho8/shogi
 
 ShogiHome → 水匠 → やねうら王
 
-## よくわかってないところ
+## 疑問や課題
 
 - Brew の Formula の中から何をやっても mkdir できない
   - だから eval ディレクトリを作れず nn.bin を置けない
   - でも /tmp/foo は作れる
   - SIP のせい？？？
   - でも ShogiHome 側で nn.bin の置き場所を指定できたのでなんとかなった
+- ShogiHome でエンジンを指定するときファイラーが開いてしまうため `/opt/homebrew/opt/yaneuraou/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1` を選択する過程で `/opt/homebrew/Cellar/yaneuraou/8.30/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1` にパスが変わってしまう
