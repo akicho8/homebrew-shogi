@@ -18,4 +18,9 @@ class Yaneuraou < Formula
       prefix.install "YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1"
     end
   end
+
+  test do
+    files = Dir[prefix/"YaneuraOu_NNUE_halfKP256-V830Git_APPLE*"]
+    assert !files.empty?, "実行ファイルが含まれていません"
+  end
 end
