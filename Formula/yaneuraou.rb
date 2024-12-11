@@ -8,10 +8,10 @@ class Yaneuraou < Formula
   def install
     if Hardware::CPU.intel?
       if Hardware::CPU.features.include?(:avx2)
-        prefix.install "YaneuraOu_NNUE_halfKPE9-V830Git_APPLEAVX2"
+        prefix.install "YaneuraOu_NNUE_halfKP256-V830Git_APPLEAVX2"
       end
       if Hardware::CPU.features.include?(:sse4_2)
-        prefix.install "YaneuraOu_NNUE_halfKPE9-V830Git_APPLESSE42"
+        prefix.install "YaneuraOu_NNUE_halfKP256-V830Git_APPLESSE42"
       end
     end
     if Hardware::CPU.arm?
