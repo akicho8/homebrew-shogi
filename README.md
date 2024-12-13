@@ -5,10 +5,9 @@
 ```
 brew tap akicho8/shogi
 brew install --cask shogi-home
-open -a ShogiHome
 ```
 
-次に進む↓
+`/Applications/ShogiHome` を `open -a ShogiHome` で起動できるのを確認したら次へ↓
 
 ## 水匠を登録する
 
