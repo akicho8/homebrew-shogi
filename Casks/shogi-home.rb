@@ -5,10 +5,13 @@ cask "shogi-home" do
 
   version "1.19.2"
   sha256 :no_check
-  license "MIT"
   url "https://github.com/sunfish-shogi/shogihome/releases/download/v1.19.2/release-v1.19.2-mac.zip"
 
   container nested: "ShogiHome-1.19.2-universal.dmg"
+
+  # License: MIT
+  # The software is licensed under the MIT License.
+
   app "ShogiHome.app"
 
   depends_on formula: "suisho"
