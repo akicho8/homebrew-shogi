@@ -5,6 +5,9 @@ class Suisho < Formula
   url "https://github.com/yaneurao/YaneuraOu/releases/download/suisho5/Suisho5.7z"
   sha256 "6734e3a3d28e67b9206c3442f6d10f16148138327dff811cadedfcf581f79809"
 
+  # TODO: ライセンスがよくわからない
+  # license "GPL-3.0-only"
+
   depends_on "yaneuraou"
 
   def install

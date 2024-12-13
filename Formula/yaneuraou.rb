@@ -5,6 +5,8 @@ class Yaneuraou < Formula
   url "https://github.com/yaneurao/YaneuraOu/releases/download/v8.30git/yaneuraou-V830-git-mac-all.7z"
   sha256 "3c4a65f0e9018ba6fb745f01239b6aeb4710d42ed60af43599440b3f9c41febe"
 
+  license "GPL-3.0-only"
+
   def install
     if Hardware::CPU.intel?
       if Hardware::CPU.features.include?(:avx2)
