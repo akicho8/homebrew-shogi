@@ -10,13 +10,25 @@ open -a ShogiHome
 
 次に進む↓
 
-## ShogiHome に水匠を登録
+## 水匠を登録する
 
-1. 「エンジン管理」→「追加」で `/opt/homebrew/opt/yaneuraou/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1` を指定する。
-   ここではダイアログから選択しないといけないのだが `/opt` の下に行くが難しいため `Command + Shift + G` で上のパスを入力するのがてっとりばやい。
-1. そのエンジンの設定の「評価関数のフォルダ」に `/opt/homebrew/opt/suisho` を指定する。直接指定すれば eval の下に nn.bin を置く作業は不要になる。
+```
+$ brew info shogi-home
+----------------------------------------------------------------------------------------------------
+ShogiHome を起動したら初回のみ次の設定を手動で行なってください。
 
-以上。
+1. 「エンジン管理→追加」で次のファイルを指定する
+   /opt/homebrew/opt/yaneuraou/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1
+   ※ファイル選択ダイアログから Command + Shift + G で上のパスを入力する
+
+2. 「エンジン管理→設定」の「評価関数のフォルダ」に次のディレクトリを指定する
+   /opt/homebrew/opt/suisho
+
+3. 「エンジン管理→設定」の「評価値スケール FV_SCALE」を 24 に変更する
+
+この説明は brew info shogi-home で再度確認できます。
+----------------------------------------------------------------------------------------------------
+```
 
 本当はこの部分も自動化したかった。
 この設定は `~/Library/Application Support/electron-shogi/usi_engine.json` に保存されるので、これを生成して配置すればいいのかもしれないが、
@@ -54,4 +66,4 @@ ShogiHome → 水匠 → やねうら王
   - でも /tmp/foo は作れる
   - SIP のせい？？？
   - でも ShogiHome 側で nn.bin の置き場所を指定できたのでなんとかなった
-- ShogiHome でエンジンを指定するときファイラーが開いてしまうため `/opt/homebrew/opt/yaneuraou/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1` を選択する過程で `/opt/homebrew/Cellar/yaneuraou/8.30/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1` にパスが変わってしまう
+- ShogiHome でエンジンを指定するときファイラー(Finder ？)が開いてしまうため `/opt/homebrew/opt/yaneuraou/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1` を選択する過程で `/opt/homebrew/Cellar/yaneuraou/8.30/YaneuraOu_NNUE_halfKP256-V830Git_APPLEM1` にパスが変わってしまう
