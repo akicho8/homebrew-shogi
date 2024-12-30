@@ -1,4 +1,4 @@
-# M2 Mac に ShogiHome + 水匠を Brew で入れる手順
+# Apple Silicon Mac に ShogiHome + 水匠を Brew で入れる手順
 
 ## 初回
 
