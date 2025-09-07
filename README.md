@@ -1,13 +1,13 @@
 # M* Mac に ShogiHome + 水匠を Brew で入れる手順
 
-## 初回のみ
+## 初回
 
 ```
 brew tap akicho8/shogi
 brew install --cask shogi-home
 ```
 
-## 更新手順
+## 更新
 
 ```
 brew update && brew upgrade shogi-home
