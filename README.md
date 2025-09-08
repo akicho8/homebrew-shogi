@@ -1,23 +1,35 @@
-# M* Mac に ShogiHome + 水匠を Brew で入れる手順
+# M* Mac に ShogiHome + 水匠を Brew で入れる方法
 
-## 初回
+## インストール
 
-```
+```sh
 brew tap akicho8/shogi
 brew install --cask shogi-home
 ```
 
 ## 更新
 
-```
+```sh
 brew update && brew upgrade shogi-home
 ```
 
-## 削除
+## アンインストール
 
-```
+```sh
 brew rm --cask shogi-home
 brew rm suisho
 brew rm yaneuraou
 brew untap akicho8/shogi
+```
+
+## エンジン設定のみ削除
+
+```sh
+rm -rf "~/Library/Application Support/electron-shogi/usi_engine.json"
+```
+
+## 設定の全削除
+
+```sh
+rm -rf "~/Library/Application Support/electron-shogi"
 ```
