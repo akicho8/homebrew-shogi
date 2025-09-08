@@ -1,4 +1,4 @@
-# M* Mac に ShogiHome + 水匠を Brew で入れる方法
+# M* Mac に ShogiHome + 水匠5 を入れる方法
 
 ## インストール
 
