@@ -33,3 +33,7 @@ rm -rf "~/Library/Application Support/electron-shogi/usi_engine.json"
 ```sh
 rm -rf "~/Library/Application Support/electron-shogi"
 ```
+
+## ちょっと何言っているかわからない
+
+→ https://x.com/sgkinakomochi
