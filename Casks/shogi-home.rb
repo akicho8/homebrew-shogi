@@ -1,5 +1,5 @@
 cask "shogi-home" do
-  version "1.27.0"
+  version "1.28.0"
 
   desc "ShogiHome は Windows・macOS・Linux で動作する次世代のGUI将棋アプリです。"
   homepage "https://github.com/sunfish-shogi/shogihome"
